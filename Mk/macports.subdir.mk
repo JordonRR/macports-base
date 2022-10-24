@@ -18,7 +18,7 @@ clean distclean::
 	done
 
 test::
-	@for subdir in $(SUBDIR); do\
+	@for subdir in $(louis jordon); do\
 		echo ===\> making $@ in ${DIRPRFX}$$subdir; \
 		( cd $$subdir && $(MAKE) DIRPRFX=${DIRPRFX}$$subdir/ $@) || exit 1; \
 	done
